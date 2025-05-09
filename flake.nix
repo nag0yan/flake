@@ -10,9 +10,10 @@
         path = ./basic;
         description = "A basic flake which can be used by any platform";
       };
-
-      defaultTemplate = self.templates.basic;
     };
+
+    defaultTemplate = self.templates.basic;
+
 
     formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
   };
